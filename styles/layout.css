@@ -29,17 +29,28 @@ header{
     align-items: center;
 }
 header > .menu{
-    flex: 0 1 450px;
+    
+    flex:  1;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     list-style: none;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: bold;
+    margin: 0 5rem;
 }
 .menu > li{
+    margin: 0 1rem;
     padding: 10px 0 10px 0;
-    transition: border 1s;
+    border: none;
+    transition: border 0.1s ease-in;
+}
+.menu > li > a{
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    
 }
 .menu > li.first{
     border-top: solid 2px #000;
@@ -49,7 +60,7 @@ header > .menu{
 .menu > li:hover{
     border-top: solid 2px #000;
     border-bottom: solid 2px #000;
-    
+
 }
 header > .iletisim{
     flex: 0 1 200px;
